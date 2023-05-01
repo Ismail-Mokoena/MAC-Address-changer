@@ -45,7 +45,7 @@ if __name__ == '__main__':
    
     #call function 
     options = arg_parser()
-    #mac_change(options.interface, options.mac_address)
+    mac_change(options.interface, options.mac_address)
     current_mac = get_mac(options.interface)
     check_mac_change(current_mac, options.mac_address)
    
